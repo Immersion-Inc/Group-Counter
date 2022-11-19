@@ -1,7 +1,7 @@
 const axios = require("axios");
 const config = require("./config.json");
 const url = "https://groups.roblox.com/v1/groups/";
-const { EmbedBuilder, WebhookClient } = require("discord.js");
+const { WebhookClient } = require("discord.js");
 
 var currentMembers = null;
 
