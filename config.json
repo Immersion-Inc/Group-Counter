@@ -1,0 +1,9 @@
+{
+    "GroupId": "4705120",
+    "WebhookUrl": "https://ptb.discord.com/api/webhooks/1043623722663284746/RQfxNz7DNZh7Sxvl5T9LFJWrEyR_0OYmp57rAOdbTQP_adJXLUOe-keI6aOsYZeu_t32",
+
+    "Cooldown": 1,
+
+    "IncreaseString": "[GROUPNAME] [N] [M]",
+    "DecreaseString": "[GROUPNAME] [N] [M]"
+}
