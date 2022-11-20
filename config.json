@@ -1,9 +1,9 @@
 {
-    "GroupId": "",
+    "GroupId": "4705120",
     "WebhookUrl": "",
 
-    "Cooldown": 3,
+    "Cooldown": 10,
 
-    "IncreaseString": "[GROUPNAME] [N] [M]",
-    "DecreaseString": "[GROUPNAME] [N] [M]"
+    "IncreaseString": "📈 [GROUPNAME] has gained [N] [M]!",
+    "DecreaseString": "📉 [GROUPNAME] has lost [N] [M]."
 }

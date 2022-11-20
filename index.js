@@ -20,10 +20,19 @@ async function post() {
       url: url + config.GroupId,
     });
   } catch (error) {
-    console.log(
-      "⚠️ Something went wrong while fetching group data, make sure your GroupId is correct! ⚠️"
-    );
-    process.exit();
+    if (error.response.status === 429) {
+      console.log(
+        "You're being rate limited! We've suspended the code for one minute, and we'll try again after the minute has passed."
+      );
+
+      await new Promise((r) => setTimeout(r, 60 * 1000));
+      return post();
+    } else {
+      console.log(
+        "⚠️ Something went wrong, please make sure your Group ID is correct."
+      );
+      process.exit();
+    }
   }
 
   const data = request["data"];
