@@ -5,9 +5,9 @@ const { WebhookClient } = require("discord.js");
 
 var currentMembers = null;
 
-if (config.Cooldown < 3) {
+if (config.Cooldown < 10) {
   console.log(
-    "Your cooldown is too high, you may face problems; we suggest setting it to 3 seconds or higher."
+    "Your cooldown is too high, you may face problems; we suggest setting it to 10 seconds or higher."
   );
 }
 
